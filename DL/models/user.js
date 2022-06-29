@@ -51,6 +51,10 @@ const UserSchema = new mongoose.Schema({
         type: mongoose.SchemaTypes.ObjectId,
         ref : 'userTrainReading'
     }],
+    assessments: [{
+        type: mongoose.SchemaTypes.ObjectId,
+        ref : 'userTest'
+    }],
     calibration: {
         type: String,
         required: true
